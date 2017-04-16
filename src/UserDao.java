@@ -22,8 +22,12 @@ public class UserDao {
 
         try {
             connection = dataSource.getConnection();
-            preparedStatement = connection.prepareStatement("select * from userinfo where id = ?");
-            preparedStatement.setString(1, id);
+
+            StatementStrategy statementStrategy = new GetUserStatementStrategy();
+            preparedStatement = statementStrategy.makeStatement(id, connection);
+
+
+
             resultSet = preparedStatement.executeQuery();
 
             if (resultSet.next()) {
@@ -70,10 +74,10 @@ public class UserDao {
 
         try {
             connection = dataSource.getConnection();
-            preparedStatement = connection.prepareStatement("insert into userinfo (id, name, password) VALUE (?,?,?)");
-            preparedStatement.setString(1,user.getId());
-            preparedStatement.setString(2, user.getName());
-            preparedStatement.setString(3, user.getPassword());
+
+            StatementStrategy statementStrategy = new AddUserStatementStrategy();
+            preparedStatement = statementStrategy.makeStatement(user, connection);
+
             preparedStatement.executeUpdate();
 
 
@@ -107,8 +111,11 @@ public class UserDao {
         try {
             connection = dataSource.getConnection();
 
-            preparedStatement = connection.prepareStatement("delete from userinfo where id = ?");
-            preparedStatement.setString(1, id);
+
+            StatementStrategy statementStrategy = new DeleteUserStatementStrategy();
+            preparedStatement = statementStrategy.makeStatement(id, connection);
+
+
             preparedStatement.executeUpdate();
 
 
@@ -133,4 +140,5 @@ public class UserDao {
 
 
     }
+
 }
