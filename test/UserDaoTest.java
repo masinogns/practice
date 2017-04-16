@@ -1,6 +1,7 @@
 import org.junit.Test;
 
 import java.sql.SQLException;
+import java.util.Random;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -28,7 +29,7 @@ public class UserDaoTest {
     @Test
     public void add() throws SQLException, ClassNotFoundException {
         User user = new User();
-        String id = "10";
+        String id = String.valueOf(new Random().nextInt());
         user.setId(id);
         String name = "rlgnsqor";
         user.setName(name);
