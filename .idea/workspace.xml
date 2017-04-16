@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d164b22f-179d-4c86-b006-0f5870978e9f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/daoFactory.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/practice3/UserDaoTest.class" afterPath="$PROJECT_DIR$/out/test/practice3/UserDaoTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/practice3.iml" afterPath="$PROJECT_DIR$/practice3.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DaoFactory.java" afterPath="$PROJECT_DIR$/src/DaoFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JejuConnectionMaker.java" afterPath="$PROJECT_DIR$/src/JejuConnectionMaker.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/UserDaoTest.java" afterPath="$PROJECT_DIR$/test/UserDaoTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -24,14 +26,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UserDaoTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserDaoTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/UserDaoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="51" column="26" lean-forward="true" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
+            <state relative-caret-position="435">
+              <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="daoFactory.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resource/daoFactory.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="71" lean-forward="false" selection-start-line="10" selection-start-column="71" selection-end-line="10" selection-end-column="71" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -56,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/src/UserDao.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="705">
-              <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+              <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding>
                 <element signature="e#191#192#0" expanded="true" />
                 <element signature="e#245#246#0" expanded="true" />
@@ -67,13 +79,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JejuConnectionMaker.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="JejuConnectionMaker.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/JejuConnectionMaker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#507#508#0" expanded="true" />
+                <element signature="e#539#540#0" expanded="true" />
+                <element signature="e#589#590#0" expanded="true" />
+                <element signature="e#631#632#0" expanded="true" />
+                <element signature="e#666#667#0" expanded="true" />
+                <element signature="e#697#698#0" expanded="true" />
+                <element signature="e#745#746#0" expanded="true" />
+                <element signature="e#785#786#0" expanded="true" />
+                <element signature="e#814#815#0" expanded="true" />
+                <element signature="e#839#840#0" expanded="true" />
+                <element signature="e#875#876#0" expanded="true" />
+                <element signature="e#903#904#0" expanded="true" />
+                <element signature="e#933#934#0" expanded="true" />
+                <element signature="e#959#960#0" expanded="true" />
+                <element signature="e#997#998#0" expanded="true" />
+                <element signature="e#1027#1028#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -121,6 +149,7 @@
         <option value="JUnit4 Test Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="spring-beans.schema" />
       </list>
     </option>
   </component>
@@ -138,10 +167,11 @@
         <option value="$PROJECT_DIR$/src/User.java" />
         <option value="$PROJECT_DIR$/src/JejuUserDao.java" />
         <option value="$PROJECT_DIR$/src/ConnectionMaker.java" />
-        <option value="$PROJECT_DIR$/src/JejuConnectionMaker.java" />
         <option value="$PROJECT_DIR$/src/UserDao.java" />
         <option value="$PROJECT_DIR$/src/DaoFactory.java" />
         <option value="$PROJECT_DIR$/test/UserDaoTest.java" />
+        <option value="$PROJECT_DIR$/resource/daoFactory.xml" />
+        <option value="$PROJECT_DIR$/src/JejuConnectionMaker.java" />
       </list>
     </option>
   </component>
@@ -220,7 +250,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
+              <option name="myItemId" value="resource" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -236,7 +266,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="FullScreen" value="true" />
     <property name="js.eslint.eslintPackage" value="" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
@@ -690,29 +720,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1492325469056</updated>
-      <workItem from="1492325470495" duration="7086000" />
+      <workItem from="1492325470495" duration="8104000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserDaoTest - 2017.04.16 at 17h 53m 12s.xml">
-      <configuration name="UserDaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDaoTest - 2017.04.16 at 17h 56m 56s.xml">
-      <configuration name="UserDaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDaoTest - 2017.04.16 at 18h 03m 23s.xml">
-      <configuration name="UserDaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDaoTest - 2017.04.16 at 18h 03m 50s.xml">
-      <configuration name="UserDaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDaoTest - 2017.04.16 at 18h 05m 06s.xml">
-      <configuration name="UserDaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDaoTest - 2017.04.16 at 18h 10m 37s.xml">
-      <configuration name="UserDaoTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="UserDaoTest - 2017.04.16 at 18h 22m 22s.xml">
       <configuration name="UserDaoTest" configurationId="JUnit" />
     </history-entry>
@@ -725,9 +737,27 @@
     <history-entry file="UserDaoTest - 2017.04.16 at 18h 24m 03s.xml">
       <configuration name="UserDaoTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UserDaoTest - 2017.04.16 at 18h 29m 49s.xml">
+      <configuration name="UserDaoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTest - 2017.04.16 at 18h 31m 51s.xml">
+      <configuration name="UserDaoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTest - 2017.04.16 at 18h 31m 57s.xml">
+      <configuration name="UserDaoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTest - 2017.04.16 at 18h 41m 39s.xml">
+      <configuration name="UserDaoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTest - 2017.04.16 at 18h 41m 43s.xml">
+      <configuration name="UserDaoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTest - 2017.04.16 at 18h 41m 47s.xml">
+      <configuration name="UserDaoTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7086000" />
+    <option name="totallyTimeSpent" value="8104000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -832,20 +862,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ConnectionMaker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="34" lean-forward="false" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
-          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding>
             <element signature="e#191#192#0" expanded="true" />
             <element signature="e#245#246#0" expanded="true" />
@@ -869,22 +889,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JejuConnectionMaker.java">
+    <entry file="file://$PROJECT_DIR$/resource/daoFactory.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="150">
+          <caret line="10" column="71" lean-forward="false" selection-start-line="10" selection-start-column="71" selection-end-line="10" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/UserDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/UserDaoTest.java">
+    <entry file="file://$PROJECT_DIR$/src/ConnectionMaker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="51" column="26" lean-forward="true" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
+        <state relative-caret-position="90">
+          <caret line="6" column="34" lean-forward="false" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JejuConnectionMaker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#507#508#0" expanded="true" />
+            <element signature="e#539#540#0" expanded="true" />
+            <element signature="e#589#590#0" expanded="true" />
+            <element signature="e#631#632#0" expanded="true" />
+            <element signature="e#666#667#0" expanded="true" />
+            <element signature="e#697#698#0" expanded="true" />
+            <element signature="e#745#746#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#814#815#0" expanded="true" />
+            <element signature="e#839#840#0" expanded="true" />
+            <element signature="e#875#876#0" expanded="true" />
+            <element signature="e#903#904#0" expanded="true" />
+            <element signature="e#933#934#0" expanded="true" />
+            <element signature="e#959#960#0" expanded="true" />
+            <element signature="e#997#998#0" expanded="true" />
+            <element signature="e#1027#1028#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -906,7 +960,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Spring</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -941,12 +995,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>practice3</last-edited>
+          <last-edited>Spring|practice3</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
