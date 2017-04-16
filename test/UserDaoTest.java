@@ -9,7 +9,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 /**
  * Created by masinogns on 2017. 4. 16..
  */
-public class UserDaoTest {
+public class UserDaoTest{
+
+
 
     @Test
     public void get() throws SQLException, ClassNotFoundException {
@@ -18,7 +20,7 @@ public class UserDaoTest {
         String name = "masinogns";
         String password = "masinogns";
 
-        UserDao userDao = new UserDao(new JejuConnectionMaker());
+        UserDao userDao = new DaoFactory().getUserDao();
         User user = userDao.get(id);
 
         assertThat(id, is(user.getId()));
@@ -36,7 +38,7 @@ public class UserDaoTest {
         String password = "rlgnsqor";
         user.setPassword(password);
 
-        UserDao userDao = new UserDao(new JejuConnectionMaker());
+        UserDao userDao = new DaoFactory().getUserDao();
         userDao.add(user);
 
         User addedUser = userDao.get(id);
@@ -44,4 +46,6 @@ public class UserDaoTest {
         assertThat(name, is(addedUser.getName()));
         assertThat(password, is(addedUser.getPassword()));
     }
+
+
 }
