@@ -1,4 +1,8 @@
-import javax.sql.DataSource;
+import org.springframework.dao.DataAccessException;
+import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
+
 import java.sql.*;
 
 /**
@@ -6,39 +10,54 @@ import java.sql.*;
  */
 public class UserDao {
 
-    public void setJdbcContext(JdbcContext jdbcContext) {
-        this.jdbcContext = jdbcContext;
+
+    public JdbcTemplate getJdbcTemplate() {
+        return jdbcTemplate;
     }
 
-    JdbcContext jdbcContext;
+    public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
+        this.jdbcTemplate = jdbcTemplate;
+    }
+
+    JdbcTemplate jdbcTemplate;
 
 
     public User get(final String id) throws ClassNotFoundException, SQLException {
-        return jdbcContext.jdbcContextWithStatementStratdgyForGet(new StatementStrategy() {
-            @Override
-            public PreparedStatement makeStatement(Connection connection) throws SQLException {
-                PreparedStatement preparedStatement;
-                preparedStatement = connection.prepareStatement("select * from userinfo where id = ?");
+        String sql = "select * from userinfo where id = ?";
+        Object[] args = new String[] {id};
+        User queryForObject = null;
 
-                preparedStatement.setString(1, id);
+        try {
+            queryForObject = getJdbcTemplate().queryForObject(sql, args, new RowMapper<User>() {
 
-                return preparedStatement;
-            }
-        });
+                @Override
+                public User mapRow(ResultSet resultSet, int i) throws SQLException {
+                    User user = new User();
+                    user.setId(resultSet.getString("id"));
+                    user.setName(resultSet.getString("name"));
+                    user.setPassword(resultSet.getString("password"));
+                    return user;
+                }
+            });
+        } catch (EmptyResultDataAccessException e) {
+            e.printStackTrace();
+        }
+
+        return queryForObject;
     }
 
     public void add(final User user) throws ClassNotFoundException, SQLException {
         final String sql = "insert into userinfo (id, name, password) VALUE (?,?,?)";
         final String[] params = new String[] {user.getId(), user.getName(), user.getPassword()};
 
-        jdbcContext.update(sql, params);
+        jdbcTemplate.update(sql, params);
     }
 
     public void delete(final String id) {
         final String sql = "delete from userinfo where id = ?";
         final String[] params = new String[] {id};
 
-        jdbcContext.update(sql, params);
+        jdbcTemplate.update(sql, params);
     }
 
 
