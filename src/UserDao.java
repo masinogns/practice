@@ -28,30 +28,21 @@ public class UserDao {
     }
 
     public void add(final User user) throws ClassNotFoundException, SQLException {
-        jdbcContext.jdbcContextWithStatementStrategyForUpdate(new StatementStrategy() {
-            @Override
-            public PreparedStatement makeStatement(Connection connection) throws SQLException {
-                PreparedStatement preparedStatement;
-                preparedStatement = connection.prepareStatement("insert into userinfo (id, name, password) VALUE (?,?,?)");
-                preparedStatement.setString(1, user.getId());
-                preparedStatement.setString(2, user.getName());
-                preparedStatement.setString(3, user.getPassword());
+        final String sql = "insert into userinfo (id, name, password) VALUE (?,?,?)";
+        final String[] params = new String[] {user.getId(), user.getName(), user.getPassword()};
 
-                return preparedStatement;
-            }
-        });
+        jdbcContext.update(sql, params);
     }
 
     public void delete(final String id) {
-        jdbcContext.jdbcContextWithStatementStrategyForUpdate(new StatementStrategy() {
-            @Override
-            public PreparedStatement makeStatement(Connection connection) throws SQLException {
-                PreparedStatement preparedStatement;
-                preparedStatement = connection.prepareStatement("delete from userinfo where id = ?");
-                preparedStatement.setString(1, id);
-                return preparedStatement;
-            }
-        });
+        final String sql = "delete from userinfo where id = ?";
+        final String[] params = new String[] {id};
+
+        jdbcContext.update(sql, params);
     }
+
+
+
+
 
 }

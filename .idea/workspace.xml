@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d164b22f-179d-4c86-b006-0f5870978e9f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/practice3/AddUserStatementStrategy.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/practice3/DaoFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/practice3/DeleteUserStatementStrategy.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/practice3/GetUserStatementStrategy.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AddUserStatementStrategy.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DaoFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DeleteUserStatementStrategy.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/GetUserStatementStrategy.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/practice3/UserDao.class" afterPath="$PROJECT_DIR$/out/production/practice3/UserDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/practice3/UserDao$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/practice3/UserDao$3.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JdbcContext.java" afterPath="$PROJECT_DIR$/src/JdbcContext.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UserDao.java" afterPath="$PROJECT_DIR$/src/UserDao.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -53,18 +46,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/UserDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+            <state relative-caret-position="461">
+              <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#178#179#0" expanded="true" />
                 <element signature="e#224#225#0" expanded="true" />
-                <marker date="1492346661000" expanded="true" signature="669:704" ph="select * fro... userinfo" />
-                <marker date="1492346661000" expanded="true" signature="1244:1299" ph="insert into userinfo... " />
-                <marker date="1492346661000" expanded="true" signature="1939:1972" ph="delete from " />
+                <marker date="1492347587000" expanded="true" signature="669:704" ph="select * fro... userinfo" />
+                <marker date="1492347587000" expanded="true" signature="948:1003" ph="insert into userinfo... " />
+                <marker date="1492347587000" expanded="true" signature="1222:1255" ph="delete from " />
               </folding>
             </state>
           </provider>
@@ -87,8 +80,8 @@
       <file leaf-file-name="JdbcContext.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/JdbcContext.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="44" column="21" lean-forward="true" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
+            <state relative-caret-position="431">
+              <caret line="106" column="8" lean-forward="false" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#317#318#0" expanded="true" />
@@ -110,7 +103,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConnectionMaker.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ConnectionMaker.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ConnectionMaker.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
@@ -155,8 +148,8 @@
         <option value="$PROJECT_DIR$/src/DeleteUserStatementStrategy.java" />
         <option value="$PROJECT_DIR$/src/AddUserStatementStrategy.java" />
         <option value="$PROJECT_DIR$/src/GetUserStatementStrategy.java" />
-        <option value="$PROJECT_DIR$/src/JdbcContext.java" />
         <option value="$PROJECT_DIR$/resource/daoFactory.xml" />
+        <option value="$PROJECT_DIR$/src/JdbcContext.java" />
         <option value="$PROJECT_DIR$/src/UserDao.java" />
       </list>
     </option>
@@ -706,14 +699,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1492325469056</updated>
-      <workItem from="1492325470495" duration="13907000" />
+      <workItem from="1492325470495" duration="14511000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserDaoTest - 2017.04.16 at 21h 10m 27s.xml">
-      <configuration name="UserDaoTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="UserDaoTest - 2017.04.16 at 21h 29m 13s.xml">
       <configuration name="UserDaoTest" configurationId="JUnit" />
     </history-entry>
@@ -741,9 +731,12 @@
     <history-entry file="UserDaoTest - 2017.04.16 at 21h 48m 39s.xml">
       <configuration name="UserDaoTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UserDaoTest - 2017.04.16 at 21h 59m 52s.xml">
+      <configuration name="UserDaoTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13907000" />
+    <option name="totallyTimeSpent" value="14511000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -866,18 +859,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JdbcContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="44" column="21" lean-forward="true" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#317#318#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resource/daoFactory.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -910,21 +891,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#178#179#0" expanded="true" />
-            <element signature="e#224#225#0" expanded="true" />
-            <marker date="1492346661000" expanded="true" signature="669:704" ph="select * fro... userinfo" />
-            <marker date="1492346661000" expanded="true" signature="1244:1299" ph="insert into userinfo... " />
-            <marker date="1492346661000" expanded="true" signature="1939:1972" ph="delete from " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/JejuConnectionMaker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -953,6 +919,33 @@
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JdbcContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="106" column="8" lean-forward="false" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#317#318#0" expanded="true" />
+            <element signature="e#361#362#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#178#179#0" expanded="true" />
+            <element signature="e#224#225#0" expanded="true" />
+            <marker date="1492347587000" expanded="true" signature="669:704" ph="select * fro... userinfo" />
+            <marker date="1492347587000" expanded="true" signature="948:1003" ph="insert into userinfo... " />
+            <marker date="1492347587000" expanded="true" signature="1222:1255" ph="delete from " />
           </folding>
         </state>
       </provider>
