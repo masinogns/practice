@@ -7,8 +7,8 @@ import org.springframework.context.support.GenericXmlApplicationContext;
 import java.sql.SQLException;
 import java.util.Random;
 
-import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.CoreMatchers.*;
+import static org.hamcrest.MatcherAssert.*;
 
 /**
  * Created by masinogns on 2017. 4. 16..
@@ -19,8 +19,6 @@ public class UserDaoTest{
 
     @Before
     public void setup(){
-//        userDao = new DaoFactory().userDao();
-//        ApplicationContext context = new AnnotationConfigApplicationContext(DaoFactory.class);
         ApplicationContext context = new GenericXmlApplicationContext("daoFactory.xml");
         userDao = context.getBean("userDao", UserDao.class);
 
@@ -44,12 +42,13 @@ public class UserDaoTest{
 
     @Test
     public void add() throws SQLException, ClassNotFoundException {
-        User user = new User();
         String id = String.valueOf(new Random().nextInt());
-        user.setId(id);
         String name = "rlgnsqor";
-        user.setName(name);
         String password = "rlgnsqor";
+
+        User user = new User();
+        user.setId(id);
+        user.setName(name);
         user.setPassword(password);
 
         userDao.add(user);
@@ -59,6 +58,27 @@ public class UserDaoTest{
         assertThat(name, is(addedUser.getName()));
         assertThat(password, is(addedUser.getPassword()));
     }
+
+    @Test
+    public void delete() throws SQLException, ClassNotFoundException {
+
+        String id = String.valueOf(new Random().nextInt());
+        String name = "rlgnsqor";
+        String password = "rlgnsqor";
+
+        User user = new User();
+        user.setId(id);
+        user.setName(name);
+        user.setPassword(password);
+
+        userDao.add(user);
+        userDao.delete(id);
+
+        User deletedUser = userDao.get(id);
+        assertThat(deletedUser, nullValue());
+    }
+
+
 
 
 }

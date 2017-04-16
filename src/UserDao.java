@@ -97,5 +97,40 @@ public class UserDao {
         }
     }
 
+    public void delete(String id) {
 
+
+        Connection connection = null;
+        PreparedStatement preparedStatement = null;
+
+
+        try {
+            connection = dataSource.getConnection();
+
+            preparedStatement = connection.prepareStatement("delete from userinfo where id = ?");
+            preparedStatement.setString(1, id);
+            preparedStatement.executeUpdate();
+
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            if (preparedStatement!=null) {
+                try {
+                    preparedStatement.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (connection != null) {
+                try {
+                    connection.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+
+    }
 }
